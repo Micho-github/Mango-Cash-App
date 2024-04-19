@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoCashApp.Api", "MangoCashApp.Api\MangoCashApp.Api.csproj", "{756F4DD9-BFC9-400D-94C1-E98E0208B97C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoCashApp.Data", "MangoCashApp.Data\MangoCashApp.Data.csproj", "{887E9A7C-508F-4ED4-9841-0984B8522AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoCashApp.Infrustructure", "MangoCashApp.Infrustructure\MangoCashApp.Infrustructure.csproj", "{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoCashApp.Service", "MangoCashApp.Service\MangoCashApp.Service.csproj", "{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoCashApp.Core", "MangoCashApp.Core\MangoCashApp.Core.csproj", "{E02F0DC8-CB05-4620-9BC0-82C3425649B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{756F4DD9-BFC9-400D-94C1-E98E0208B97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756F4DD9-BFC9-400D-94C1-E98E0208B97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756F4DD9-BFC9-400D-94C1-E98E0208B97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756F4DD9-BFC9-400D-94C1-E98E0208B97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887E9A7C-508F-4ED4-9841-0984B8522AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887E9A7C-508F-4ED4-9841-0984B8522AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887E9A7C-508F-4ED4-9841-0984B8522AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887E9A7C-508F-4ED4-9841-0984B8522AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02F0DC8-CB05-4620-9BC0-82C3425649B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02F0DC8-CB05-4620-9BC0-82C3425649B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02F0DC8-CB05-4620-9BC0-82C3425649B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02F0DC8-CB05-4620-9BC0-82C3425649B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63ABD913-C52A-4012-9936-28BF6BA4640B}
+	EndGlobalSection
+EndGlobal
