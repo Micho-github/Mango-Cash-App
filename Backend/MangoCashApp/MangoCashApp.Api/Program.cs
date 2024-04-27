@@ -1,5 +1,10 @@
+using MangoCashApp.Infrustructure.Abstracts;
 using MangoCashApp.Infrustructure.Data;
+using MangoCashApp.Infrustructure.Repositories;
+using MangoCashApp.Infrustructure;
 using Microsoft.EntityFrameworkCore;
+using MangoCashApp.Service;
+using MangoCashApp.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +23,13 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 });
 
 
+#region Dependency injections
+
+builder.Services.AddInfrastructureDependencies()
+                .AddServiceDependencies()
+                .AddCoreDependencies();
+
+#endregion
 
 
 var app = builder.Build();

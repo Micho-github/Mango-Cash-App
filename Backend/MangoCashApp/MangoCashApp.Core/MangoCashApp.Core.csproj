@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\Accounts - Copy\**" />
+    <EmbeddedResource Remove="Features\Accounts - Copy\**" />
+    <None Remove="Features\Accounts - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,6 +24,14 @@
     <ProjectReference Include="..\MangoCashApp.Data\MangoCashApp.Data.csproj" />
     <ProjectReference Include="..\MangoCashApp.Infrustructure\MangoCashApp.Infrustructure.csproj" />
     <ProjectReference Include="..\MangoCashApp.Service\MangoCashApp.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Accounts\Commands\Validations\" />
+    <Folder Include="Features\Transactions\Queries\Handlers\" />
+    <Folder Include="Features\Transactions\Queries\Models\" />
+    <Folder Include="Features\Transactions\Queries\Results\" />
+    <Folder Include="Mapping\" />
   </ItemGroup>
 
 </Project>

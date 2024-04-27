@@ -23,8 +23,4 @@
     <ProjectReference Include="..\MangoCashApp.Core\MangoCashApp.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
