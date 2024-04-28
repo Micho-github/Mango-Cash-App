@@ -13,7 +13,7 @@ namespace MangoCashApp.Api.Controllers
     public class TransactionsController : AppControllerBase
     {
         [HttpPost(Router.TransactionRouting.Transaction)]
-        public async Task<IActionResult> Transaction([FromBody] AddTransactionCommand command)
+        public async Task<IActionResult> Transaction([FromBody] TransactionCommand command)
         {
             var response = await Mediator.Send(command);
             return NewResult(response);

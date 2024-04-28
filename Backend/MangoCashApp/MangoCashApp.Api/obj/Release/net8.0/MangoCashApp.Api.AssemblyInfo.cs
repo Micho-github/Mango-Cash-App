@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MangoCashApp.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6263b31e65781390c892527552e14ecbf647aa8")]
 [assembly: System.Reflection.AssemblyProductAttribute("MangoCashApp.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MangoCashApp.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

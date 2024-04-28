@@ -28,13 +28,13 @@ namespace MangoCashApp.Service.Implementations
             return await _transactionRepository.GetTransactionsListAsync();
         }
 
-        public async Task<Transaction> GetTransactionByIdAsync(Guid id)
+        public Task<Transaction> GetTransactionByIdAsync(Guid id)
         {
             // var transaction = await _transactionRepository.GetByIdAsync(id);
             var transaction = _transactionRepository.GetTableNoTracking()
                                             .Where(x => x.AccountId.Equals(id))
                                             .FirstOrDefault();
-            return transaction;
+            return Task.FromResult<Transaction>(transaction);
         }
 
         public async Task<string> CreateTransactionAsync(Transaction transaction)

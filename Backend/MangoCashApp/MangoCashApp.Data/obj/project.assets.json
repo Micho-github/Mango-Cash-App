@@ -2232,11 +2232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
+      "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
       "projectName": "MangoCashApp.Data",
-      "projectPath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
+      "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
       "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-      "outputPath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\obj\\",
+      "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,7 +1,7 @@
 ﻿using MangoCashApp.Core.Bases;
 using MangoCashApp.Core.Features.Transactions.Commands.Models;
-using MangoCashApp.Data.Entities;
-using MangoCashApp.Service.Abstracts;
+using MangoCashApp.Data.Entities; // Assuming Transaction Entity resides here
+using MangoCashApp.Service.Abstracts; // Assuming Transaction service interface resides here
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -12,9 +12,8 @@ using System.Threading.Tasks;
 namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 {
     public class TransactionCommandHandler : ResponseHandler,
-                                       IRequestHandler<AddTransactionCommand, Response<string>>
+                                           IRequestHandler<TransactionCommand, BaseResponse>
     {
-
         #region Fields
         private readonly ITransactionService _transactionService;
         #endregion
@@ -23,35 +22,69 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
         public TransactionCommandHandler(ITransactionService transactionService)
         {
             _transactionService = transactionService;
-
         }
         #endregion
 
-        #region Handle Functions
-        public async Task<Response<string>> Handle(AddTransactionCommand request, CancellationToken cancellationToken)
+        #region Handle Methods
+        public async Task<BaseResponse> Handle(TransactionCommand request, CancellationToken cancellationToken)
         {
-            var transaction = new Transaction
+            Transaction transaction;
+
+            if (request.TransactionType == "Deposit")
             {
+                transaction = new Transaction
+                {
+                    AccountId = request.AccountId,
+                    Amount = request.Amount,
+                    Description = $"Deposit from {request.FromAccountName}" // Assuming FromAccountName reflects deposit source
+                };
 
-                TransactionType = request.TransactionType,
+                await _transactionService.DepositAsync(transaction);
+            }
+            else if (request.TransactionType == "Withdraw")
+            {
+                transaction = new Transaction
+                {
+                    AccountId = request.AccountId,
+                    Amount = -request.Amount, // Negative for withdrawal
+                    Description = $"Withdrawal to {request.ToAccountName}" // Assuming ToAccountName reflects withdrawal destination
+                };
 
-            };
-            //add
-            var result = await _transactionService.CreateTransactionAsync(transaction);
-            //check condition
-            //if (result == "Exist") return new Response<string>("Email already exists");
-            //return response
+                await _transactionService.WithdrawAsync(transaction);
+            }
+            else if (request.TransactionType == "Send")
+            {
+                // Need to find recipient account ID based on ToAccountName
+                var recipientAccountId = await _transactionService.GetAccountIdByAccountNameAsync(request.ToAccountName);
 
-            if (result == "Success") return Created("Added Successfully");
+                if (recipientAccountId == null)
+                {
+                    throw new InvalidOperationException("Recipient account not found");
+                }
 
-            else return BadRequest<String>();
+                var fromTransaction = new Transaction
+                {
+                    AccountId = request.AccountId,
+                    Amount = request.Amount
+                };
 
+                var toTransaction = new Transaction
+                {
+                    AccountId = recipientAccountId.Value, // Assuming GetAccountIdByAccountNameAsync returns a valid Guid?
+                    Amount = -request.Amount, // Negative for transfer
+                    Description = $"Sent to {request.ToAccountName}" // Assuming ToAccountName reflects recipient
+                };
+
+                await _transactionService.WithdrawAsync(fromTransaction);
+                await _transactionService.DepositAsync(toTransaction);
+            }
+            else
+            {
+                throw new InvalidOperationException("Invalid Transaction Type");
+            }
+
+            return new BaseResponse();
         }
         #endregion
-
-        #region hashing function
-       
-        #endregion
-
     }
 }

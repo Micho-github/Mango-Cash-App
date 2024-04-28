@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D54r2Oog5YCs3iYF1IprQAj5gL9FuyXAzkeSkE6gjhO//anAId2q35g2GL8opucxVsfioIzRWM7EYho4bRoc1g==",
+  "dgSpecHash": "KdYK1QJK75DIu+jkoh6bzb0qD9pb64IB5b18YdoEjk2IF4+5kAu3jGhdQ+ZMkTJpnVOGIKBJmCHxPUFwNz/tkw==",
   "success": true,
-  "projectFilePath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
+  "projectFilePath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gebran\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gebran\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

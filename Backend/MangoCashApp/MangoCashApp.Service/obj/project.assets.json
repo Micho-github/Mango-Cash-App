@@ -4147,11 +4147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
+      "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
       "projectName": "MangoCashApp.Service",
-      "projectPath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
+      "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
       "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-      "outputPath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\obj\\",
+      "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4173,11 +4173,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
-              "projectPath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
+            "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
+              "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
             },
-            "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
-              "projectPath": "D:\\Me\\CS\\Y3-S6\\I3332\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj"
+            "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
+              "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj"
             }
           }
         }
