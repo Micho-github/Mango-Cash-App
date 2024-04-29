@@ -26,5 +26,6 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Models
 
         [Required]
         public decimal Amount { get; set; }
+
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,8 +22,9 @@ namespace MangoCashApp.Core.Features.Transactions.Queries.Handlers
 
         public async Task<decimal> Handle(GetAccountBalanceQuery request, CancellationToken cancellationToken)
         {
-            var account = await _accountRepository.GetById(request.AccountId);
+            var account = await _accountRepository.GetAccountByIdQuery(request.AccountId);
             return account?.Balance ?? 0; // Return 0 if account not found
         }
     }
 }
+*/

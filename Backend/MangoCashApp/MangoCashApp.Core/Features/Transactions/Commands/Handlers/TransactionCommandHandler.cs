@@ -5,6 +5,7 @@ using MangoCashApp.Service.Abstracts; // Assuming Transaction service interface 
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,21 +13,23 @@ using System.Threading.Tasks;
 namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 {
     public class TransactionCommandHandler : ResponseHandler,
-                                           IRequestHandler<TransactionCommand, BaseResponse>
+                                           IRequestHandler<TransactionCommand, Response<string>>
     {
         #region Fields
         private readonly ITransactionService _transactionService;
+        private readonly IAccountService _accountService;
         #endregion
 
         #region Constructors
-        public TransactionCommandHandler(ITransactionService transactionService)
+        public TransactionCommandHandler(ITransactionService transactionService, IAccountService accountService)
         {
             _transactionService = transactionService;
+            _accountService = accountService;
         }
         #endregion
 
         #region Handle Methods
-        public async Task<BaseResponse> Handle(TransactionCommand request, CancellationToken cancellationToken)
+        public async Task<Response<string>> Handle(TransactionCommand request, CancellationToken cancellationToken)
         {
             Transaction transaction;
 
@@ -35,8 +38,7 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
                 transaction = new Transaction
                 {
                     AccountId = request.AccountId,
-                    Amount = request.Amount,
-                    Description = $"Deposit from {request.FromAccountName}" // Assuming FromAccountName reflects deposit source
+                    Amount = request.Amount
                 };
 
                 await _transactionService.DepositAsync(transaction);
@@ -47,35 +49,36 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
                 {
                     AccountId = request.AccountId,
                     Amount = -request.Amount, // Negative for withdrawal
-                    Description = $"Withdrawal to {request.ToAccountName}" // Assuming ToAccountName reflects withdrawal destination
                 };
 
                 await _transactionService.WithdrawAsync(transaction);
             }
             else if (request.TransactionType == "Send")
             {
-                // Need to find recipient account ID based on ToAccountName
-                var recipientAccountId = await _transactionService.GetAccountIdByAccountNameAsync(request.ToAccountName);
-
-                if (recipientAccountId == null)
-                {
-                    throw new InvalidOperationException("Recipient account not found");
-                }
-
                 var fromTransaction = new Transaction
                 {
                     AccountId = request.AccountId,
                     Amount = request.Amount
                 };
 
+                await _transactionService.WithdrawAsync(fromTransaction);
+            }
+
+            else if (request.TransactionType == "Recieve") { 
+                // Need to find recipient account ID based on ToAccountName
+                var recipientAccountId = await _transactionService.GetAccountByIdAsync(request.ToAccounId);
+
+                if (recipientAccountId == null)
+                {
+                    throw new InvalidOperationException("Recipient account not found");
+                }
+
                 var toTransaction = new Transaction
                 {
                     AccountId = recipientAccountId.Value, // Assuming GetAccountIdByAccountNameAsync returns a valid Guid?
                     Amount = -request.Amount, // Negative for transfer
-                    Description = $"Sent to {request.ToAccountName}" // Assuming ToAccountName reflects recipient
                 };
 
-                await _transactionService.WithdrawAsync(fromTransaction);
                 await _transactionService.DepositAsync(toTransaction);
             }
             else
@@ -83,7 +86,12 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
                 throw new InvalidOperationException("Invalid Transaction Type");
             }
 
-            return new BaseResponse();
+            return new Response<string>();
+        }
+
+        Task<Response<string>> IRequestHandler<TransactionCommand, Response<string>>.Handle(TransactionCommand request, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

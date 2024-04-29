@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace MangoCashApp.Core.Features.Transactions.Queries.Handlers
 {
-    public class GetTransactionByIdQueryHandler : ResponseHandler,
+    public class TransactionHandler : ResponseHandler,
                                                  IRequestHandler<GetTransactionByIdQuery, Response<Transaction>>
     {
         #region Fields
@@ -19,7 +19,7 @@ namespace MangoCashApp.Core.Features.Transactions.Queries.Handlers
         #endregion
 
         #region Constructors
-        public GetTransactionByIdQueryHandler(ITransactionService transactionService)
+        public TransactionHandler(ITransactionService transactionService)
         {
             _transactionService = transactionService;
         }
@@ -28,22 +28,13 @@ namespace MangoCashApp.Core.Features.Transactions.Queries.Handlers
         #region Handle Method
         public async Task<Response<Transaction>> Handle(GetTransactionByIdQuery request, CancellationToken cancellationToken)
         {
-            var transaction = await _transactionService.GetTransactionByIdAsync(request.TransactionId);
+            var transaction = await _transactionService.GetTransactionByIdAsync(request.AccountId);
             if (transaction == null)
             {
                 return NotFound<Transaction>("Transaction not found");
             }
 
             return Success(transaction);
-        }
-        #endregion
-
-        #region HandleException Method (Optional)
-        // You can optionally implement custom logic for handling exceptions here
-        public async Task<Response<Transaction>> HandleException(Exception exception, GetTransactionByIdQuery request, CancellationToken cancellationToken)
-        {
-            // Implement logic for handling exceptions during transaction retrieval
-            return null;
         }
         #endregion
     }
