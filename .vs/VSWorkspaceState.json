@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Backend",
+    "\\Backend\\MangoCashApp",
+    "\\Backend\\MangoCashApp\\MangoCashApp.Core",
+    "\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features",
+    "\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions",
+    "\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries",
+    "\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries\\Handlers"
+  ],
+  "SelectedNode": "\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries\\Handlers\\GetAccountBalanceQueryHandler.cs",
+  "PreviewInSolutionExplorer": false
+}

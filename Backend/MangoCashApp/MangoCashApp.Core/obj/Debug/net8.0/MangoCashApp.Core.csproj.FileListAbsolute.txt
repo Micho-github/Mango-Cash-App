@@ -40,3 +40,12 @@ D:\Me\CS\Y3-S6\I3332\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Core\obj
 D:\Me\CS\Y3-S6\I3332\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.pdb
 D:\Me\CS\Y3-S6\I3332\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.genruntimeconfig.cache
 D:\Me\CS\Y3-S6\I3332\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\ref\MangoCashApp.Core.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.csproj.AssemblyReference.cache
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.AssemblyInfoInputs.cache
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.AssemblyInfo.cs
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.csproj.CoreCompileInputs.cache
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.sourcelink.json
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\refint\MangoCashApp.Core.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Core\obj\Debug\net8.0\MangoCashApp.Core.pdb
