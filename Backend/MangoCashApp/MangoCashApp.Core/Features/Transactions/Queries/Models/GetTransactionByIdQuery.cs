@@ -14,5 +14,10 @@ namespace MangoCashApp.Core.Features.Transactions.Queries.Models
     {
         [Required]
         public Guid AccountId { get; set; }
+
+        public GetTransactionByIdQuery(Guid id)
+        {
+            this.AccountId = id;
+        }
     }
 }

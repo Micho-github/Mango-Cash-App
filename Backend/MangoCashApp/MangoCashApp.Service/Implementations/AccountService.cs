@@ -71,6 +71,27 @@ namespace MangoCashApp.Service.Implementations
             }
             return hash.ToString();
         }
+
+        public async Task<string> UpdateBalanceAsync(Account account, decimal balance)
+        {
+            var accountToUpdate = await _accountRepository.GetByIdAsync(account.Id);  // Replace with appropriate method
+
+            if (accountToUpdate == null)
+            {
+                return "Account not found";  // Handle case where account doesn't exist
+            }
+
+            // Update the balance property directly
+            accountToUpdate.Balance = balance;
+            if (balance < 0)
+            {
+                return "Insufficient funds";
+            }
+
+            // Save the changes through the repository
+            await _accountRepository.UpdateAsync(accountToUpdate);
+            return "Success";
+        }
         #endregion
     }
 }

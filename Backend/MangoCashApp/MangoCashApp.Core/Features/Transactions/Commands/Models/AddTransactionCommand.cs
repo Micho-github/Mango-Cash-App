@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 
 namespace MangoCashApp.Core.Features.Transactions.Commands.Models
 {
-    public class TransactionCommand: IRequest<Bases.Response<string>>
+    /*
+    public class AddTransactionCommand : IRequest<Bases.Response<string>>
     {
         [Required]
         public Guid AccountId { get; set; }
@@ -22,10 +23,10 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Models
 
         public string? ToAccountName { get; set; }
 
-        public DateTime Date { get; set; }= DateTime.Now;
+        //public DateTime Date { get; set; }= DateTime.Now;
 
         [Required]
         public decimal Amount { get; set; }
-
     }
+    */
 }

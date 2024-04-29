@@ -1,38 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.core\\features\\transactions\\commands\\models\\transactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\transactions\\commands\\models\\transactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.core\\features\\transactions\\commands\\handlers\\transactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\transactions\\commands\\handlers\\transactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.core\\features\\transactions\\queries\\handlers\\transactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\transactions\\queries\\handlers\\transactionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.core\\features\\transactions\\queries\\models\\gettransactionbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\transactions\\queries\\models\\gettransactionbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.core\\features\\accounts\\queries\\handlers\\accounthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\accounts\\queries\\handlers\\accounthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.core\\features\\accounts\\commands\\handlers\\accountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.core\\features\\accounts\\commands\\handlers\\accountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\accounts\\commands\\handlers\\accountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.service\\abstracts\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.core\\features\\accounts\\commands\\models\\addaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\accounts\\commands\\models\\addaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.core\\features\\accounts\\commands\\models\\updatebalancecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\accounts\\commands\\models\\updatebalancecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.service\\implementations\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|solutionrelative:mangocashapp.service\\implementations\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.service\\abstracts\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|solutionrelative:mangocashapp.service\\abstracts\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|d:\\github\\mango-cash-app\\backend\\mangocashapp\\mangocashapp.service\\abstracts\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.service\\implementations\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|solutionrelative:mangocashapp.service\\implementations\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.core\\features\\transactions\\commands\\handlers\\transactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\transactions\\commands\\handlers\\transactioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.infrustructure\\infrustracturebases\\genericrepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|solutionrelative:mangocashapp.infrustructure\\infrustracturebases\\genericrepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.infrustructure\\infrustracturebases\\igenericrepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|solutionrelative:mangocashapp.infrustructure\\infrustracturebases\\igenericrepositoryasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.service\\abstracts\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CDAC1C-72F2-4E73-B9FB-DA48B2C3C575}|MangoCashApp.Service\\MangoCashApp.Service.csproj|solutionrelative:mangocashapp.service\\abstracts\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.infrustructure\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|solutionrelative:mangocashapp.infrustructure\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.infrustructure\\abstracts\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|solutionrelative:mangocashapp.infrustructure\\abstracts\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.infrustructure\\abstracts\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|solutionrelative:mangocashapp.infrustructure\\abstracts\\itransactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.infrustructure\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ECC836D-CC63-42E5-B79C-E4B1C8726D1B}|MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj|solutionrelative:mangocashapp.infrustructure\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756F4DD9-BFC9-400D-94C1-E98E0208B97C}|MangoCashApp.Api\\MangoCashApp.Api.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756F4DD9-BFC9-400D-94C1-E98E0208B97C}|MangoCashApp.Api\\MangoCashApp.Api.csproj|solutionrelative:mangocashapp.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756F4DD9-BFC9-400D-94C1-E98E0208B97C}|MangoCashApp.Api\\MangoCashApp.Api.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756F4DD9-BFC9-400D-94C1-E98E0208B97C}|MangoCashApp.Api\\MangoCashApp.Api.csproj|solutionrelative:mangocashapp.api\\controllers\\transactionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887E9A7C-508F-4ED4-9841-0984B8522AF1}|MangoCashApp.Data\\MangoCashApp.Data.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.data\\appmetadata\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887E9A7C-508F-4ED4-9841-0984B8522AF1}|MangoCashApp.Data\\MangoCashApp.Data.csproj|solutionrelative:mangocashapp.data\\appmetadata\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.core\\features\\transactions\\commands\\models\\addtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E02F0DC8-CB05-4620-9BC0-82C3425649B0}|MangoCashApp.Core\\MangoCashApp.Core.csproj|solutionrelative:mangocashapp.core\\features\\transactions\\commands\\models\\addtransactioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{887E9A7C-508F-4ED4-9841-0984B8522AF1}|MangoCashApp.Data\\MangoCashApp.Data.csproj|c:\\users\\miche\\onedrive\\desktop\\mango - cash app\\backend\\mangocashapp\\mangocashapp.data\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{887E9A7C-508F-4ED4-9841-0984B8522AF1}|MangoCashApp.Data\\MangoCashApp.Data.csproj|solutionrelative:mangocashapp.data\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +86,253 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TransactionCommand.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\TransactionCommand.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\TransactionCommand.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\TransactionCommand.cs",
-              "RelativeToolTip": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\TransactionCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "GenericRepositoryAsync.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\InfrustractureBases\\GenericRepositoryAsync.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Infrustructure\\InfrustractureBases\\GenericRepositoryAsync.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\InfrustractureBases\\GenericRepositoryAsync.cs",
+              "RelativeToolTip": "MangoCashApp.Infrustructure\\InfrustractureBases\\GenericRepositoryAsync.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:53:29.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransactionHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries\\Handlers\\TransactionHandler.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Transactions\\Queries\\Handlers\\TransactionHandler.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries\\Handlers\\TransactionHandler.cs",
-              "RelativeToolTip": "MangoCashApp.Core\\Features\\Transactions\\Queries\\Handlers\\TransactionHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:24:16.457Z",
+              "WhenOpened": "2024-04-29T15:49:02.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetTransactionByIdQuery.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries\\Models\\GetTransactionByIdQuery.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Transactions\\Queries\\Models\\GetTransactionByIdQuery.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Queries\\Models\\GetTransactionByIdQuery.cs",
-              "RelativeToolTip": "MangoCashApp.Core\\Features\\Transactions\\Queries\\Models\\GetTransactionByIdQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Implementations\\AccountService.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Service\\Implementations\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Implementations\\AccountService.cs",
+              "RelativeToolTip": "MangoCashApp.Service\\Implementations\\AccountService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAowFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:23:19.955Z",
+              "WhenOpened": "2024-04-29T15:09:00.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TransactionCommandHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
-              "RelativeToolTip": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEQAAAAQAAAA",
+              "DocumentIndex": 2,
+              "Title": "UpdateBalanceCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\UpdateBalanceCommand.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\UpdateBalanceCommand.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\UpdateBalanceCommand.cs",
+              "RelativeToolTip": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\UpdateBalanceCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T06:37:29.256Z",
+              "WhenOpened": "2024-04-29T15:06:28.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Queries\\Handlers\\AccountHandler.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Accounts\\Queries\\Handlers\\AccountHandler.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Queries\\Handlers\\AccountHandler.cs",
-              "RelativeToolTip": "MangoCashApp.Core\\Features\\Accounts\\Queries\\Handlers\\AccountHandler.cs",
-              "ViewState": "AQIAABMAAAAANDMzMzPjvwAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AccountCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
+              "RelativeToolTip": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAA/wEUAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:16:08.816Z",
+              "WhenOpened": "2024-04-29T14:57:41.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AccountCommandHandler.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
-              "RelativeToolTip": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Handlers\\AccountCommandHandler.cs",
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Implementations\\TransactionService.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Service\\Implementations\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Implementations\\TransactionService.cs",
+              "RelativeToolTip": "MangoCashApp.Service\\Implementations\\TransactionService.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowDEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:04:10.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\IAccountService.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Service\\Abstracts\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\IAccountService.cs",
+              "RelativeToolTip": "MangoCashApp.Service\\Abstracts\\IAccountService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:06:41.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddAccountCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\AddAccountCommand.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\AddAccountCommand.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\AddAccountCommand.cs",
+              "RelativeToolTip": "MangoCashApp.Core\\Features\\Accounts\\Commands\\Models\\AddAccountCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:13:55.465Z",
+              "WhenOpened": "2024-04-29T15:06:30.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\IAccountService.cs",
-              "RelativeDocumentMoniker": "MangoCashApp.Service\\Abstracts\\IAccountService.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\IAccountService.cs",
-              "RelativeToolTip": "MangoCashApp.Service\\Abstracts\\IAccountService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "Title": "TransactionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
+              "RelativeToolTip": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Handlers\\TransactionCommandHandler.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:09:09.038Z",
+              "WhenOpened": "2024-04-29T15:12:47.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ITransactionService.cs",
-              "DocumentMoniker": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\ITransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\ITransactionService.cs",
               "RelativeDocumentMoniker": "MangoCashApp.Service\\Abstracts\\ITransactionService.cs",
-              "ToolTip": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\ITransactionService.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\Abstracts\\ITransactionService.cs",
               "RelativeToolTip": "MangoCashApp.Service\\Abstracts\\ITransactionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAABCAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T06:44:20.555Z",
+              "WhenOpened": "2024-04-29T15:05:00.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IGenericRepositoryAsync.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\InfrustractureBases\\IGenericRepositoryAsync.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Infrustructure\\InfrustractureBases\\IGenericRepositoryAsync.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\InfrustractureBases\\IGenericRepositoryAsync.cs",
+              "RelativeToolTip": "MangoCashApp.Infrustructure\\InfrustractureBases\\IGenericRepositoryAsync.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:45:08.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Infrustructure\\Repositories\\AccountRepository.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "MangoCashApp.Infrustructure\\Repositories\\AccountRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:28:25.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Repositories\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Infrustructure\\Repositories\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Repositories\\TransactionRepository.cs",
+              "RelativeToolTip": "MangoCashApp.Infrustructure\\Repositories\\TransactionRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:28:33.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ITransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Abstracts\\ITransactionRepository.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Infrustructure\\Abstracts\\ITransactionRepository.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Abstracts\\ITransactionRepository.cs",
+              "RelativeToolTip": "MangoCashApp.Infrustructure\\Abstracts\\ITransactionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:28:41.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Abstracts\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Infrustructure\\Abstracts\\IAccountRepository.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\Abstracts\\IAccountRepository.cs",
+              "RelativeToolTip": "MangoCashApp.Infrustructure\\Abstracts\\IAccountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:28:42.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TransactionsController.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\Controllers\\TransactionsController.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Api\\Controllers\\TransactionsController.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\Controllers\\TransactionsController.cs",
+              "RelativeToolTip": "MangoCashApp.Api\\Controllers\\TransactionsController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:18:59.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddTransactionCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\AddTransactionCommand.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\AddTransactionCommand.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\AddTransactionCommand.cs",
+              "RelativeToolTip": "MangoCashApp.Core\\Features\\Transactions\\Commands\\Models\\AddTransactionCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:13:09.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Api\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "MangoCashApp.Api\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCYAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:17:40.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Router.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\AppMetaData\\Router.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Data\\AppMetaData\\Router.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\AppMetaData\\Router.cs",
+              "RelativeToolTip": "MangoCashApp.Data\\AppMetaData\\Router.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:18:23.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\Entities\\Account.cs",
+              "RelativeDocumentMoniker": "MangoCashApp.Data\\Entities\\Account.cs",
+              "ToolTip": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\Entities\\Account.cs",
+              "RelativeToolTip": "MangoCashApp.Data\\Entities\\Account.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwBAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:10:39.796Z",
               "EditorCaption": ""
             }
           ]

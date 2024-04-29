@@ -10,7 +10,7 @@ namespace MangoCashApp.Infrustructure.InfrustractureBases
     public interface IGenericRepositoryAsync<T> where T : class
     {
         Task DeleteRangeAsync(ICollection<T> entities);
-        Task<T> GetByIdAsync(int id);
+        Task<T> GetByIdAsync(Guid id);
         Task SaveChangesAsync();
         IDbContextTransaction BeginTransaction();
         void Commit();

@@ -12,7 +12,8 @@ using System.Threading.Tasks;
 namespace MangoCashApp.Core.Features.Accounts.Commands.Handlers
 {
     public class AccountCommandHandler : ResponseHandler,
-                                       IRequestHandler<AddAccountCommand, Response<string>>
+                                       IRequestHandler<AddAccountCommand, Response<string>>,
+                                       IRequestHandler<UpdateBalanceCommand, Response<string>>
     {
 
         #region Fields
@@ -31,6 +32,7 @@ namespace MangoCashApp.Core.Features.Accounts.Commands.Handlers
         public async Task<Response<string>> Handle(AddAccountCommand request, CancellationToken cancellationToken)
         {
             var Hashedpassword = SimpleHash(request.Password);
+
             var account = new Account
             {
                 UserEmail = request.UserEmail,
@@ -50,6 +52,28 @@ namespace MangoCashApp.Core.Features.Accounts.Commands.Handlers
             
             else return BadRequest<String>();
 
+        }
+
+        public async Task<Response<string>> Handle(UpdateBalanceCommand request, CancellationToken cancellationToken)
+        {
+            //check if id exist first
+            var account = await _accountService.GetAccountByIdAsync(request.AccountId);
+
+            //return not found
+            if (account == null) return NotFound<string>("Account not found");
+
+            //call service that make an edit
+            var balance = account.Balance;
+            var newbalance = balance + request.Balance;
+            if (newbalance < 0)
+            {
+                return BadRequest<string>("Insufficient funds");
+            }
+            var result = await _accountService.UpdateBalanceAsync(account,newbalance);
+            //return response
+             if (result == "Success") return Created($"balance update Successfull to {request.AccountId} old {balance} new {newbalance}");
+
+             else return BadRequest<String>();
         }
         #endregion
 

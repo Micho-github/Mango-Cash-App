@@ -1,35 +1,35 @@
 ﻿using MangoCashApp.Core.Bases;
 using MangoCashApp.Core.Features.Transactions.Commands.Models;
-using MangoCashApp.Data.Entities; // Assuming Transaction Entity resides here
-using MangoCashApp.Service.Abstracts; // Assuming Transaction service interface resides here
+using MangoCashApp.Data.Entities;
+using MangoCashApp.Service.Abstracts;
 using MediatR;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*
 namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 {
+    
     public class TransactionCommandHandler : ResponseHandler,
-                                           IRequestHandler<TransactionCommand, Response<string>>
+                                       IRequestHandler<AddTransactionCommand, Response<string>>
     {
+
         #region Fields
         private readonly ITransactionService _transactionService;
-        private readonly IAccountService _accountService;
         #endregion
 
         #region Constructors
-        public TransactionCommandHandler(ITransactionService transactionService, IAccountService accountService)
+        public TransactionCommandHandler(ITransactionService transactionService)
         {
             _transactionService = transactionService;
-            _accountService = accountService;
+
         }
         #endregion
 
-        #region Handle Methods
-        public async Task<Response<string>> Handle(TransactionCommand request, CancellationToken cancellationToken)
+        #region Handle Functions
+        public async Task<Response<string>> Handle(AddTransactionCommand request, CancellationToken cancellationToken)
         {
             Transaction transaction;
 
@@ -64,7 +64,8 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
                 await _transactionService.WithdrawAsync(fromTransaction);
             }
 
-            else if (request.TransactionType == "Recieve") { 
+            else if (request.TransactionType == "Recieve")
+            {
                 // Need to find recipient account ID based on ToAccountName
                 var recipientAccountId = await _transactionService.GetAccountByIdAsync(request.ToAccounId);
 
@@ -88,11 +89,8 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 
             return new Response<string>();
         }
-
-        Task<Response<string>> IRequestHandler<TransactionCommand, Response<string>>.Handle(TransactionCommand request, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
-        #endregion
-    }
+      
+#endregion
 }
+}
+     */

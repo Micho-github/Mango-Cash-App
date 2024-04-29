@@ -35,5 +35,11 @@ namespace MangoCashApp.Api.Controllers
             var response = await Mediator.Send(login);
             return NewResult(response);
         }
+        [HttpPut(Router.AccountRouting.UpdateBalance)]
+        public async Task<IActionResult> UpdateBalance([FromBody] UpdateBalanceCommand command)
+        {
+            var response = await Mediator.Send(command);
+            return NewResult(response);
+        }
     }
 }

@@ -16,5 +16,7 @@ namespace MangoCashApp.Service.Abstracts
         public Task<string> CreateAccountAsync(Account account);
 
         public Task<Account> GetAccountByLoginAsync(string Email,String Password);
+
+        public Task<string> UpdateBalanceAsync(Account account, decimal balance);
     }
 }

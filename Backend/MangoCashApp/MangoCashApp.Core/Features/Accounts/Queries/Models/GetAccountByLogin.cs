@@ -20,7 +20,6 @@ namespace MangoCashApp.Core.Features.Accounts.Queries.Models
                 this.Password = Password;
             }
 
-
         }
     }
 

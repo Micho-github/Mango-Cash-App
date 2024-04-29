@@ -10,21 +10,23 @@ namespace MangoCashApp.Data.AppMetaData
     {
         public const string root = "Api";
         public const string version = "V1";
-        public const string Rule = root + "/" + version + "/";
+        public const string Rule = root + "/" + version+"/";
 
         public static class AccountRouting
         {
             public const string Prefix = Rule + "Account";
-            public const string List = Prefix + "/List";
+            public const string List =Prefix + "/List";
             public const string GetById = Prefix + "/{id}";
             public const string SignUp = Prefix + "/SignUp";
             public const string Login = Prefix + "/Login";
+            public const string UpdateBalance = Prefix + "/UpdateBalance";
         }
-
         public static class TransactionRouting
         {
             public const string Prefix = Rule + "Transaction";
             public const string Transaction = Prefix + "/Transaction";
+            public const string List = Prefix + "/List";
+            public const string GetById = Prefix + "/{id}";
         }
     }
 }

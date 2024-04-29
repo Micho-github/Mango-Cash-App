@@ -11,6 +11,5 @@ namespace MangoCashApp.Infrustructure.Abstracts
     public interface ITransactionRepository : IGenericRepositoryAsync<Transaction>
     {
         public Task<List<Transaction>> GetTransactionsListAsync();
-
     }
 }

@@ -10,6 +10,7 @@ namespace MangoCashApp.Infrustructure
         public static IServiceCollection AddInfrastructureDependencies(this IServiceCollection services)
         {
             services.AddTransient<IAccountRepository, AccountRepository>();
+            services.AddTransient<ITransactionRepository, TransactionRepository>();
             services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
             return services;
         }

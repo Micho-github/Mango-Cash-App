@@ -11,6 +11,7 @@ namespace MangoCashApp.Service
         public static IServiceCollection AddServiceDependencies(this IServiceCollection services)
         {
             services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<ITransactionService, TransactionService>();
             return services;
         }
 
