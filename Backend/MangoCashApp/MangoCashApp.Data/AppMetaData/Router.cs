@@ -25,6 +25,8 @@ namespace MangoCashApp.Data.AppMetaData
         {
             public const string Prefix = Rule + "Transaction";
             public const string Transaction = Prefix + "/Transaction";
+            public const string List = Prefix + "/List";
+            public const string GetById = Prefix + "/{id}";
         }
     }
 }
