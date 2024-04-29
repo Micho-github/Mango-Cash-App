@@ -1,5 +1,6 @@
 ﻿using MangoCashApp.Api.Base;
 using MangoCashApp.Core.Features.Accounts.Queries.Models;
+using MangoCashApp.Core.Features.Transactions.Commands.Models;
 using MangoCashApp.Core.Features.Transactions.Queries.Models;
 using MangoCashApp.Data.AppMetaData;
 using MediatR;
@@ -24,11 +25,11 @@ namespace MangoCashApp.Api.Controllers
             return NewResult(await Mediator.Send(new GetTransactionByIdQuery(id)));
         }
 
-        /*[HttpPost(Router.TransactionRouting.Transaction)]
-        * public async Task<IActionResult> Transaction([FromBody] AddTransactionCommand command)
+        [HttpPost(Router.TransactionRouting.Transaction)]
+        public async Task<IActionResult> Transaction([FromBody] AddTransactionCommand command)
         {
             var response = await Mediator.Send(command);
             return NewResult(response);
-        }*/
+        }
     }
 }

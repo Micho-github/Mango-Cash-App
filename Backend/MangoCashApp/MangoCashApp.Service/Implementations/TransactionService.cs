@@ -44,19 +44,6 @@ namespace MangoCashApp.Service.Implementations
             await _transactionRepository.AddAsync(transaction);
             return "Success";
         }
-
-        public async Task<string> DepositAsync(Transaction transaction)
-        {
-            
-            return "Success";
-        }
-
-        public async Task<string> WithdrawAsync(Transaction transaction)
-        {
-            
-            return "Success";
-        }
-
         #endregion
 
     }

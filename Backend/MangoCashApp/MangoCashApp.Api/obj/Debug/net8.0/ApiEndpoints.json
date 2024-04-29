@@ -1,0 +1,118 @@
+[
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.AccountsController",
+    "Method": "GetAcconntById",
+    "RelativePath": "api/Accounts/Api/V1/Account/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.AccountsController",
+    "Method": "GetAccountList",
+    "RelativePath": "api/Accounts/Api/V1/Account/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.AccountsController",
+    "Method": "Login",
+    "RelativePath": "api/Accounts/Api/V1/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "MangoCashApp.Core.Features.Accounts.Queries.Models.GetAccountByLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.AccountsController",
+    "Method": "SignUp",
+    "RelativePath": "api/Accounts/Api/V1/Account/SignUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MangoCashApp.Core.Features.Accounts.Commands.Models.AddAccountCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.AccountsController",
+    "Method": "UpdateBalance",
+    "RelativePath": "api/Accounts/Api/V1/Account/UpdateBalance",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MangoCashApp.Core.Features.Accounts.Commands.Models.UpdateBalanceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.TransactionsController",
+    "Method": "GetTransactionById",
+    "RelativePath": "api/Transactions/Api/V1/Transaction/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.TransactionsController",
+    "Method": "GetTransactionList",
+    "RelativePath": "api/Transactions/Api/V1/Transaction/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MangoCashApp.Api.Controllers.TransactionsController",
+    "Method": "Transaction",
+    "RelativePath": "api/Transactions/Api/V1/Transaction/Transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MangoCashApp.Core.Features.Transactions.Commands.Models.AddTransactionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

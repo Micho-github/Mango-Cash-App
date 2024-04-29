@@ -11,3 +11,17 @@ C:\Users\Miche\OneDrive\Desktop\Mango - Cash App\Backend\MangoCashApp\MangoCashA
 C:\Users\Miche\OneDrive\Desktop\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.pdb
 C:\Users\Miche\OneDrive\Desktop\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.genruntimeconfig.cache
 C:\Users\Miche\OneDrive\Desktop\Mango - Cash App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\ref\MangoCashApp.Data.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.deps.json
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.runtimeconfig.json
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.pdb
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.AssemblyInfoInputs.cache
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.AssemblyInfo.cs
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.csproj.CoreCompileInputs.cache
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.sourcelink.json
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\refint\MangoCashApp.Data.dll
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.pdb
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.genruntimeconfig.cache
+D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\ref\MangoCashApp.Data.dll

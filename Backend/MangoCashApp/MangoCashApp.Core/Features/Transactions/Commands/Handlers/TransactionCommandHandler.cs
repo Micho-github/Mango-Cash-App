@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-/*
+
 namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 {
     
@@ -18,13 +18,14 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 
         #region Fields
         private readonly ITransactionService _transactionService;
+        private readonly IAccountService _accountService;
         #endregion
 
         #region Constructors
-        public TransactionCommandHandler(ITransactionService transactionService)
+        public TransactionCommandHandler(ITransactionService transactionService, IAccountService accountService)
         {
             _transactionService = transactionService;
-
+            _accountService = accountService;
         }
         #endregion
 
@@ -33,64 +34,88 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
         {
             Transaction transaction;
 
-            if (request.TransactionType == "Deposit")
+            if (request.TransactionType == "deposit")
             {
                 transaction = new Transaction
                 {
                     AccountId = request.AccountId,
-                    Amount = request.Amount
+                    Amount = request.Amount,
+                    FromAccountName = request.FromAccountName,
+                    ToAccountName = request.ToAccountName,
+                    Date = request.Date,
+                    TransactionType = request.TransactionType,
                 };
 
-                await _transactionService.DepositAsync(transaction);
             }
-            else if (request.TransactionType == "Withdraw")
+            else if (request.TransactionType == "withdraw")
             {
                 transaction = new Transaction
                 {
                     AccountId = request.AccountId,
-                    Amount = -request.Amount, // Negative for withdrawal
+                    Amount = request.Amount,
+                    FromAccountName = request.FromAccountName,
+                    ToAccountName = request.ToAccountName,
+                    Date = request.Date,
+                    TransactionType = request.TransactionType,
                 };
 
-                await _transactionService.WithdrawAsync(transaction);
             }
-            else if (request.TransactionType == "Send")
+            else if (request.TransactionType == "send")
             {
-                var fromTransaction = new Transaction
+                transaction = new Transaction
                 {
                     AccountId = request.AccountId,
-                    Amount = request.Amount
+                    Amount = request.Amount,
+                    FromAccountName = request.FromAccountName,
+                    ToAccountName = request.ToAccountName,
+                    Date = request.Date,
+                    TransactionType = request.TransactionType,
                 };
 
-                await _transactionService.WithdrawAsync(fromTransaction);
             }
 
-            else if (request.TransactionType == "Recieve")
+            else if (request.TransactionType == "recieve")
             {
                 // Need to find recipient account ID based on ToAccountName
-                var recipientAccountId = await _transactionService.GetAccountByIdAsync(request.ToAccounId);
+                var recipientAccountId = await _accountService.GetAccountByIdAsync(request.AccountId);
 
                 if (recipientAccountId == null)
                 {
-                    throw new InvalidOperationException("Recipient account not found");
+                    return new Response<string>("Recipient account not found");
                 }
 
-                var toTransaction = new Transaction
+                transaction = new Transaction
                 {
-                    AccountId = recipientAccountId.Value, // Assuming GetAccountIdByAccountNameAsync returns a valid Guid?
-                    Amount = -request.Amount, // Negative for transfer
+                    AccountId = recipientAccountId.Id,
+                    Amount = request.Amount,
+                    FromAccountName = request.FromAccountName,
+                    ToAccountName = request.ToAccountName,
+                    Date = request.Date,
+                    TransactionType = request.TransactionType,
                 };
 
-                await _transactionService.DepositAsync(toTransaction);
             }
             else
             {
-                throw new InvalidOperationException("Invalid Transaction Type");
+                return new Response<string>("Invalid Transaction Type");
             }
 
-            return new Response<string>();
+            var Account = await _accountService.GetAccountByIdAsync(request.AccountId);
+
+            var _ = await _accountService.UpdateBalanceAsync(Account, request.Amount);
+
+            if (_ == "Success")
+            {
+                var result = await _transactionService.CreateTransactionAsync(transaction);
+                //return response
+
+                if (result == "Success") return Created("Added Successfully");
+
+                else return BadRequest<String>();
+            }
+            else return BadRequest<String>();
         }
       
-#endregion
+        #endregion
+    }
 }
-}
-     */
