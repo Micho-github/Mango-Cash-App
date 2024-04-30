@@ -1,6 +1,25 @@
     import React from 'react'
-    import { Link } from 'react-router-dom'
+    import { Link, useParams } from 'react-router-dom'
+    import { useState, useEffect } from 'react'
     export default function HomePage() {
+
+        const { id } = useParams();
+
+        const [account, setAccount] = useState(null);
+
+        useEffect(() => {
+            const fetchAccount = async () => {
+                try {
+                    const response = await axios.get(`http://localhost:8800/Api/V1/Account/${id}`);
+                    console.log(response.data);
+                    setAccount(response.data);
+                } catch (error) {
+                    console.error("Error fetching account: ", error);
+                }
+            };
+                fetchAccount();
+            }, [id]); 
+
       return (
         <div data-w-id="5c6eb5400253237162de2bd8">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
@@ -30,7 +49,7 @@
                         <h1 className="heading-2">Your Balance is</h1>
                         <div className="w-layout-hflex flex-block-2">
                             <div className="text-block-10">$</div>
-                            <div className="text-block-9">100.00</div>
+                            <div className="text-block-9">{account.Balance}</div>
                             <div className="div-block-18">
                                 <article data-w-id="c00aae38-d372-dc2d-2993-f5d87a50149a" 
                                     className="div-block-19"><img

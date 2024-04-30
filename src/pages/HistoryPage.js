@@ -1,7 +1,29 @@
     import React from 'react'
-    import { Link } from 'react-router-dom'
+    import { useEffect, useState } from 'react'
+    import { Link, useParams} from 'react-router-dom'
+    import axios from 'axios';
+    import Transaction from '../components/Transaction';
     
     export default function HistoryPage() {
+        const { id } = useParams();
+
+        const [transactions, setTransactions] = useState([]);
+
+        useEffect(() => {
+            const fetchTransactions = async () => {
+                try {
+                    const response = await axios.get(`http://localhost:8800/Api/V1/Transaction/${id}`);
+                    console.log(response.data);
+                    setTransactions(response.data);
+                } catch (error) {
+                    console.error("Error fetching transactions: ", error);
+                }
+            };
+                fetchTransactions();
+            }, [id]); 
+
+
+
       return (
         <div data-w-id="5c6eb5400253237162de2bd8">
     <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
@@ -29,19 +51,19 @@
         <div className="text-block-6">Go Back</div>
     </Link>
     <h1 className="heading-2">Transactions History</h1>
+    
+
     <div>
-        <div>
-            <div className="w-layout-blockcontainer container-3 w-container"><img
-                    src="images/deposit.png"
-                    loading="lazy" width="Auto" sizes="50px" alt=""
-                    className="image-8-copy" />
-                <div className="w-layout-blockcontainer container-5 w-container">
-                    <div className="text-block-15">Deposit</div>
-                    <div className="text-block-15-copy">11 April 2024, 11:00 AM</div>
-                </div>
-                <div className="receive_amount">+ $100.00</div>
-            </div>
-            <div className="w-layout-blockcontainer container-3 w-container"><img
+        {transactions.map(transaction => (
+            <Transaction key={transaction.id} transaction={transaction}/>
+        ))}
+    </div>
+    </div>
+    );}
+    
+
+{/*
+             <div className="w-layout-blockcontainer container-3 w-container"><img
                     src="images/withdraw.png"
                     loading="lazy" width="Auto" sizes="50px" alt=""
                     className="image-8-copy-copy" />
@@ -88,8 +110,8 @@
             </div>
         </section>
     </div>
-</div>
+      </div> */}
 
-      )
-    }
+      
+    
     

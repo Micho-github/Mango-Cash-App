@@ -1,7 +1,28 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 export default function LoginForm() {
+
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.post('http://localhost:8800/Api/V1/Account/Login', {
+                email,
+                password
+            });
+            console.log('Login successful:', response.data);
+        } catch (error) {
+            console.error('Error logging in:', error);
+        }
+    };
+
+
   return (
     <div data-w-id="5c6eb5400253237162de2bd8" className="body">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
@@ -17,13 +38,16 @@ export default function LoginForm() {
                     loading="lazy" width="273" alt="" className="image" /></div>
         </div>
         <div className="form-block w-form">
-            <form data-name="Get In Touch Form" name="wf-form-Get-In-Touch-Form" id="email-form" method="get"
+            <form onSubmit={handleSubmit} data-name="Get In Touch Form" name="wf-form-Get-In-Touch-Form" id="email-form" method="get"
                 className="login-form" data-wf-page-id="6612759caa3661d029e2ece6"
-                data-wf-element-id="73556c75-296c-783d-2dac-830321d23af5"><label for="Email-4" className="field-label">Email
-                    address</label><input className="text-field w-input" maxlength="256" name="Email-4" data-name="Email 4"
-                    placeholder="Enter your email" type="email" id="Email-4" required="" /><label for="Email-3"
-                    className="field-label">Password</label><input className="text-field w-input" maxlength="256" name="Email-3"
-                    data-name="Email 3" placeholder="Enter your password" type="email" id="Email-3" required="" />
+                data-wf-element-id="73556c75-296c-783d-2dac-830321d23af5">
+                    <label for="Email-4" className="field-label">Email address</label
+                    ><input className="text-field w-input" maxlength="256" name="Email-4" data-name="Email 4"
+                    placeholder="Enter your email" type="email" id="Email-4" value={email} onChange={(e) => setEmail(e.target.value)} required="" />
+                    <label for="Email-3"
+                    className="field-label">Password</label>
+                    <input className="text-field w-input" maxlength="256" name="Email-3"
+                    data-name="Email 3" placeholder="Enter your password" type="email" id="Email-3" value={password} onChange={(e) => setPassword(e.target.value)} required="" />
                 <div className="div-block-2"><Link to="/"><input type="submit" data-wait="Please wait..." className="button w-button"
                         value="Submit" /></Link></div>
             </form>
