@@ -11,7 +11,7 @@ namespace MangoCashApp.Service.Abstracts
     {
         public Task<List<Transaction>> GetTransactionsListAsync();
 
-        public Task<Transaction> GetTransactionByIdAsync(Guid id);
+        public Task<List<Transaction>> GetTransactionByIdAsync(Guid id);
 
         public Task<string> CreateTransactionAsync(Transaction transaction);
     }

@@ -1,6 +1,7 @@
 ﻿using MangoCashApp.Data.Entities;
 using MangoCashApp.Infrustructure.Abstracts;
 using MangoCashApp.Service.Abstracts;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,12 +29,12 @@ namespace MangoCashApp.Service.Implementations
             return await _transactionRepository.GetTransactionsListAsync();
         }
 
-        public async Task<Transaction> GetTransactionByIdAsync(Guid id)
+        public async Task<List<Transaction>> GetTransactionByIdAsync(Guid id)
         {
             // var transaction = await _transactionRepository.GetByIdAsync(id);
-            var transaction = _transactionRepository.GetTableNoTracking()
+            var transaction = await _transactionRepository.GetTableNoTracking()
                                             .Where(x => x.AccountId.Equals(id))
-                                            .FirstOrDefault();
+                                            .ToListAsync();
             return transaction;
         }
 

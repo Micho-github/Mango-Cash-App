@@ -10,7 +10,7 @@ using MediatR;
 
 namespace MangoCashApp.Core.Features.Transactions.Queries.Models
 {
-    public class GetTransactionByIdQuery : IRequest<Response<Transaction>>
+    public class GetTransactionByIdQuery : IRequest<Response<List<Transaction>>>
     {
         [Required]
         public Guid AccountId { get; set; }

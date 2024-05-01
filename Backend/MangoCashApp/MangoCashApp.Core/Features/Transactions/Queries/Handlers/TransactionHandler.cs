@@ -14,7 +14,7 @@ namespace MangoCashApp.Core.Features.Transactions.Queries.Handlers
 {
     public class TransactionHandler : ResponseHandler,
                                   IRequestHandler<GetTransactionListQuery, Response<List<Transaction>>>,
-                                  IRequestHandler<GetTransactionByIdQuery, Response<Transaction>>
+                                  IRequestHandler<GetTransactionByIdQuery, Response<List<Transaction>>>
 
     {
 
@@ -35,10 +35,10 @@ namespace MangoCashApp.Core.Features.Transactions.Queries.Handlers
             return Success(await _transactionService.GetTransactionsListAsync());
         }
 
-        public async Task<Response<Transaction>> Handle(GetTransactionByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Response<List<Transaction>>> Handle(GetTransactionByIdQuery request, CancellationToken cancellationToken)
         {
             var account = await _transactionService.GetTransactionByIdAsync(request.AccountId);
-            if (account == null) return NotFound<Transaction>("Object not found.");
+            if (account == null) return NotFound<List<Transaction>>("Object not found.");
             return Success(account);
         }
 

@@ -60,17 +60,6 @@ namespace MangoCashApp.Service.Implementations
             }
             return AccountResult;
         }
-        #endregion
-        #region hashing function
-        public string SimpleHash(string password)
-        {
-            int hash = 0;
-            foreach (char c in password)
-            {
-                hash = (hash + (int)c) * 31;
-            }
-            return hash.ToString();
-        }
 
         public async Task<string> UpdateBalanceAsync(Account account, decimal balance)
         {
@@ -82,8 +71,8 @@ namespace MangoCashApp.Service.Implementations
             }
 
             // Update the balance property directly
-            accountToUpdate.Balance = balance;
-            if (balance < 0)
+            accountToUpdate.Balance += balance;
+            if (accountToUpdate.Balance < 0)
             {
                 return "Insufficient funds";
             }
@@ -91,6 +80,17 @@ namespace MangoCashApp.Service.Implementations
             // Save the changes through the repository
             await _accountRepository.UpdateAsync(accountToUpdate);
             return "Success";
+        }
+        #endregion
+        #region hashing function
+        public string SimpleHash(string password)
+        {
+            int hash = 0;
+            foreach (char c in password)
+            {
+                hash = (hash + (int)c) * 31;
+            }
+            return hash.ToString();
         }
         #endregion
     }

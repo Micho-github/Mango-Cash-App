@@ -52,7 +52,7 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
                 transaction = new Transaction
                 {
                     AccountId = request.AccountId,
-                    Amount = request.Amount,
+                    Amount = -request.Amount,
                     FromAccountName = request.FromAccountName,
                     ToAccountName = request.ToAccountName,
                     Date = request.Date,
@@ -65,7 +65,7 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
                 transaction = new Transaction
                 {
                     AccountId = request.AccountId,
-                    Amount = request.Amount,
+                    Amount = -request.Amount,
                     FromAccountName = request.FromAccountName,
                     ToAccountName = request.ToAccountName,
                     Date = request.Date,
@@ -74,7 +74,7 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 
             }
 
-            else if (request.TransactionType == "recieve")
+            else if (request.TransactionType == "receive")
             {
                 // Need to find recipient account ID based on ToAccountName
                 var recipientAccountId = await _accountService.GetAccountByIdAsync(request.AccountId);
@@ -102,7 +102,7 @@ namespace MangoCashApp.Core.Features.Transactions.Commands.Handlers
 
             var Account = await _accountService.GetAccountByIdAsync(request.AccountId);
 
-            var _ = await _accountService.UpdateBalanceAsync(Account, request.Amount);
+            var _ = await _accountService.UpdateBalanceAsync(Account, transaction.Amount);
 
             if (_ == "Success")
             {

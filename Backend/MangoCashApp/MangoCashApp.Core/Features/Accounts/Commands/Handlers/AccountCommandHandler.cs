@@ -63,15 +63,14 @@ namespace MangoCashApp.Core.Features.Accounts.Commands.Handlers
             if (account == null) return NotFound<string>("Account not found");
 
             //call service that make an edit
-            var balance = account.Balance;
-            var newbalance = balance + request.Balance;
-            if (newbalance < 0)
-            {
-                return BadRequest<string>("Insufficient funds");
-            }
-            var result = await _accountService.UpdateBalanceAsync(account,newbalance);
+            var balance = request.Balance;
+
+            var result = await _accountService.UpdateBalanceAsync(account,balance);
             //return response
-             if (result == "Success") return Created($"balance update Successfull to {request.AccountId} old {balance} new {newbalance}");
+            
+            if (result == "Insufficient funds") return BadRequest<string>("Insufficient funds");
+
+            else if (result == "Success") return Created($"Successfully issued {balance} to {request.AccountId}");
 
              else return BadRequest<String>();
         }
