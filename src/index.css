@@ -2,6 +2,72 @@ html {
 
   font-family: sans-serif;
 }
+.signup-alert-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure alert has higher z-index */
+}
+
+.signup-alert-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Adjust opacity as needed */
+}
+
+.signup-alert-content {
+  position: relative;
+  width: 400px; /* Adjust width as needed */
+  background-color: rgb(31, 31, 31);
+  color: #ffd001;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  animation: enter 0.3s ease-out, leave 0.2s ease-in; /* Animation for entry/exit */
+}
+
+.signup-alert-message {
+  display: flex; /* Use flexbox for side-by-side arrangement */
+  flex-direction: row; /* Stack elements vertically */
+  align-items: flex-start; /* Align content to the left */
+}
+
+.signup-alert-icon {
+  margin-top: 2em;
+  width: 5em; /* Adjust icon width as needed */
+  margin-right: 2em; /* Add space between icon and message */
+}
+
+.signup-alert-text h3 {
+  transform: translateY(20%);
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.signup-alert-text p {
+  transform: translateY(20%);
+  font-size: 18px;
+  color: #ffd001;
+}
+
+.signup-alert-buttons {
+  transform: translateY(-20%);
+  display: flex;
+  justify-content: end;
+  
+}
+
+.signup-alert-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4b4b4b;
+  color: #ffd001;
+}
+
 
 body {
   margin: 0;
@@ -1972,6 +2038,7 @@ textarea.w-input, textarea.w-select {
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
   }
+ 
 }
 
 @media screen and (max-width: 767px) {
@@ -3791,6 +3858,7 @@ figcaption {
 
 .image-11, .div-block-20 {
   cursor: pointer;
+  display: none;
 }
 
 .div-block-21 {

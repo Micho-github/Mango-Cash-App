@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {}
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
         "projectName": "MangoCashApp.Data",
-        "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
-        "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\obj\\",
+        "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
+        "packagesPath": "C:\\Users\\Miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gebran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

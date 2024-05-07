@@ -3,32 +3,51 @@
     import { Link, useParams} from 'react-router-dom'
     import axios from 'axios';
     import Transaction from '../components/Transaction';
+import HomeAlert from '../components/ui/HomeAlert';
     
     export default function HistoryPage() {
         const { id } = useParams();
 
         const [transactions, setTransactions] = useState([]);
-
+        const [AccountFound,SetAccountFound] = useState(true);
+        const compareDates = (a, b) => {
+            return new Date(b.date) - new Date(a.date);
+          };
+          
         useEffect(() => {
-            const fetchTransactions = async () => {
+            const fetchAccount = async () => {
                 try {
-                    const response = await axios.get(`http://localhost:8800/Api/V1/Transaction/${id}`);
-                    console.log(response.data);
-                    setTransactions(response.data);
+                    const response = await axios.get(`http://localhost:5247/api/Accounts/Api/V1/Account/${id}`);
+                    SetAccountFound(true);
                 } catch (error) {
-                    console.error("Error fetching transactions: ", error);
+                    SetAccountFound(false);
+                    console.error("Error fetching account: ", error);
                 }
             };
-                fetchTransactions();
+                fetchAccount();
             }, [id]); 
-
-
+            useEffect(() => {
+                const fetchTransactions = async () => {
+                  try {
+                    const response = await axios.get(`http://localhost:5247/api/Transactions/Api/V1/Transaction/${id}`);
+                    console.log(response.data);
+                    const sortedTransactions = response.data.data.sort(compareDates);
+                    setTransactions(sortedTransactions);
+                  } catch (error) {
+                    console.error("Error fetching transactions: ", error);
+                  }
+                };
+              
+                fetchTransactions();
+              }, [id]);
 
       return (
         <div data-w-id="5c6eb5400253237162de2bd8">
-    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
+            {AccountFound==true ? (
+            <>
+            <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" className="navigation w-nav">
-        <div className="navigation-wrap"><Link to="/" className="logo-link w-nav-brand"><img
+        <div className="navigation-wrap"><Link to={`/${id}`} className="logo-link w-nav-brand"><img
                     src="images/mango black bg.png"
                     width="108" sizes="108px"
                     alt="" className="logo-image" /></Link>
@@ -45,7 +64,7 @@
                 <div>Logout</div>
             </Link>
         </div>
-    </div><Link to="/" className="link-block w-inline-block"><img
+    </div><Link to={`/${id}`} className="link-block w-inline-block"><img
             src="images/left-arrow.png"
             loading="lazy" width="22" sizes="22px" alt=""/>
         <div className="text-block-6">Go Back</div>
@@ -54,64 +73,19 @@
     
 
     <div>
-        {transactions.map(transaction => (
-            <Transaction key={transaction.id} transaction={transaction}/>
-        ))}
+    {transactions.length > 0 && (
+       <div>
+         {transactions.map((transaction) => (
+           <Transaction key={transaction.id} transaction={transaction} />
+         ))}
+       </div>
+     )}
+     {transactions.length === 0 && <p>No transactions found.</p>}
     </div>
-    </div>
+    </>):(
+    <>
+    <HomeAlert/>
+    </>)}
+            </div>
+    
     );}
-    
-
-{/*
-             <div className="w-layout-blockcontainer container-3 w-container"><img
-                    src="images/withdraw.png"
-                    loading="lazy" width="Auto" sizes="50px" alt=""
-                    className="image-8-copy-copy" />
-                <div className="w-layout-blockcontainer container-5 w-container">
-                    <div className="text-block-15">Received from Steve</div>
-                    <div className="text-block-15-copy">11 April 2024, 11:00 AM</div>
-                </div>
-                <div className="receive_amount">+ $80.00</div>
-            </div>
-            <div className="w-layout-blockcontainer container-3 w-container"><img
-                    src="images/withdraw.png"
-                    loading="lazy" width="Auto" sizes="50px" alt=""
-                    className="image-9-copy" />
-                <div className="w-layout-blockcontainer container-5 w-container">
-                    <div className="text-block-15">Withdraw</div>
-                    <div className="text-block-15-copy">10 April 2024, 8:00 PM</div>
-                </div>
-                <div className="withdraw_amount">- $50.00</div>
-            </div>
-            <div className="w-layout-blockcontainer container-3 w-container"><img
-                    src="images/withdraw.png"
-                    loading="lazy" width="Auto" sizes="50px" alt=""
-                    className="image-9-copy-copy" />
-                <div className="w-layout-blockcontainer container-5 w-container">
-                    <div className="text-block-15">Sent to David</div>
-                    <div className="text-block-15-copy">10 April 2024, 2:00 PM</div>
-                </div>
-                <div className="withdraw_amount">- $20.00</div>
-            </div>
-        </div>
-    </div>
-    <div className="section cc-home-wrap"></div>
-    <div className="section">
-        <div className="container"></div>
-    </div>
-    <div className="section-copy-copy">
-        <section className="section-3">
-            <div className="div-block-4">
-                <div className="text-block-5">Powered by<br />‍</div><img
-                    src="/images/mango black bg.png"
-                    loading="lazy" width="90" sizes="90px" alt=""
-                    className="image-2" />
-                <div className="divider"></div>
-            </div>
-        </section>
-    </div>
-      </div> */}
-
-      
-    
-    

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj": {}
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj": {
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj",
         "projectName": "MangoCashApp.Api",
-        "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj",
-        "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Api\\obj\\",
+        "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\MangoCashApp.Api.csproj",
+        "packagesPath": "C:\\Users\\Miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gebran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj"
               }
             }
           }
@@ -94,25 +89,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj": {
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj",
         "projectName": "MangoCashApp.Core",
-        "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj",
-        "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Core\\obj\\",
+        "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\MangoCashApp.Core.csproj",
+        "packagesPath": "C:\\Users\\Miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gebran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,21 +111,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
               },
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj"
               },
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj"
               }
             }
           }
@@ -181,25 +171,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
         "projectName": "MangoCashApp.Data",
-        "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
-        "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\obj\\",
+        "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj",
+        "packagesPath": "C:\\Users\\Miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gebran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -207,7 +193,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -254,25 +239,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj",
+        "projectUniqueName": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj",
         "projectName": "MangoCashApp.Infrustructure",
-        "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj",
-        "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\obj\\",
+        "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj",
+        "packagesPath": "C:\\Users\\Miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gebran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -280,15 +261,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
               }
             }
           }
@@ -339,25 +319,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj": {
+    "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
         "projectName": "MangoCashApp.Service",
-        "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
-        "packagesPath": "C:\\Users\\gebran\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Service\\obj\\",
+        "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\MangoCashApp.Service.csproj",
+        "packagesPath": "C:\\Users\\Miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\gebran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -365,18 +341,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Data\\MangoCashApp.Data.csproj"
               },
-              "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
-                "projectPath": "D:\\GitHub\\Mango-Cash-App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj"
+              "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj": {
+                "projectPath": "C:\\Users\\Miche\\OneDrive\\Desktop\\Mango - Cash App\\Backend\\MangoCashApp\\MangoCashApp.Infrustructure\\MangoCashApp.Infrustructure.csproj"
               }
             }
           }
@@ -419,7 +394,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

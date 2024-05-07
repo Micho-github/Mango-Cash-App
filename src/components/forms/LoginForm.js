@@ -1,23 +1,40 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 
-export default function LoginForm() {
+export default function LoginForm(){
 
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+      
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
-            const response = await axios.post('http://localhost:8800/Api/V1/Account/Login', {
-                email,
-                password
+            const response = await axios.post('http://localhost:5247/api/Accounts/Api/V1/Account/Login', {
+                "userEmail": email,
+                "password": password
             });
-            console.log('Login successful:', response.data);
+            if (response.status === 200 && response.data.message === "Response Successfull") { // More robust success check
+                console.log('Login successful:', response.data);
+                const id = response.data?.data.id;
+                if (id) {
+                  console.log('User ID:', id);
+                  toast.success("Login Successfull, redirecting you...")
+                  navigate(`/${id}`); // Navigate to user profile with ID
+                } else {
+                  console.warn('User ID not found in response. Check API behavior or response structure.');
+                }
+              } else if (response.status === 404) { // Handle unauthorized
+                console.error('Login failed: Invalid credentials.');
+              } else {
+                console.error('Unexpected error:', response); // Handle unknown errors
+              }
         } catch (error) {
+            toast.error("Wrong Email or Password.")
             console.error('Error logging in:', error);
         }
     };
@@ -25,6 +42,18 @@ export default function LoginForm() {
 
   return (
     <div data-w-id="5c6eb5400253237162de2bd8" className="body">
+        <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
             role="banner" className="navbar w-nav"><Link to="#" className="w-inline-block"><img
                     src="images/mango black bg.png"
@@ -46,10 +75,10 @@ export default function LoginForm() {
                     placeholder="Enter your email" type="email" id="Email-4" value={email} onChange={(e) => setEmail(e.target.value)} required="" />
                     <label for="Email-3"
                     className="field-label">Password</label>
-                    <input className="text-field w-input" maxlength="256" name="Email-3"
-                    data-name="Email 3" placeholder="Enter your password" type="email" id="Email-3" value={password} onChange={(e) => setPassword(e.target.value)} required="" />
-                <div className="div-block-2"><Link to="/"><input type="submit" data-wait="Please wait..." className="button w-button"
-                        value="Submit" /></Link></div>
+                    <input className="text-field w-input" maxlength="256" name="password"
+                    data-name="password" placeholder="Enter your password" type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required="" />
+                <div className="div-block-2"><input type="submit" data-wait="Please wait..." className="button w-button"
+                        value="Submit" /></div>
             </form>
             <div className="status-message cc-success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
@@ -57,6 +86,7 @@ export default function LoginForm() {
             <div className="status-message cc-error-message w-form-fail">
                 <div>Oops! Something went wrong while submitting the form.</div>
             </div>
+
         </div>
         <section className="section-2">
             <div className="div-block-3">
@@ -128,7 +158,7 @@ export default function LoginForm() {
     </div>
     <section className="section-3">
         <div className="div-block-4">
-            <div className="text-block-5">Powered by<br />‍</div><img
+            <div className="text-block-5">Powered by<br/></div><img
                 src="images/mango black bg.png"
                 loading="lazy" width="90" sizes="90px" alt=""
                 className="image-2" />
@@ -138,3 +168,4 @@ export default function LoginForm() {
 </div>
   )
 }
+

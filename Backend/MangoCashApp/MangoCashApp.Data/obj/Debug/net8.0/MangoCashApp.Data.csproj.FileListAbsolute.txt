@@ -25,3 +25,17 @@ D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0
 D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.pdb
 D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.genruntimeconfig.cache
 D:\GitHub\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\ref\MangoCashApp.Data.dll
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.deps.json
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.runtimeconfig.json
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.dll
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\bin\Debug\net8.0\MangoCashApp.Data.pdb
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.AssemblyInfoInputs.cache
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.AssemblyInfo.cs
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.sourcelink.json
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.dll
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\refint\MangoCashApp.Data.dll
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.pdb
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\MangoCashApp.Data.genruntimeconfig.cache
+C:\Users\Miche\OneDrive\Desktop\github\Mango-Cash-App\Backend\MangoCashApp\MangoCashApp.Data\obj\Debug\net8.0\ref\MangoCashApp.Data.dll

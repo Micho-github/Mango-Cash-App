@@ -5,15 +5,16 @@ import LoginPage from "./pages/LoginPage";
 import Layout from "./components/layout/Layout";
 import SignUpPage from "./pages/SignUpPage";
 import HistoryPage from "./pages/HistoryPage";
-
+import 'react-toastify/dist/ReactToastify.css';
 function App(){
     return(
         <Layout>
         <BrowserRouter>
             <Routes>
-            <Route path='/' element={<HomePage/>}/>
+            <Route path='/:id' element={<HomePage/>}/>
             <Route path='/transactions/:id' element={<HistoryPage/>}/>
             <Route path='/login' element={<LoginPage/>}/>
+            <Route path='/' element={<LoginPage/>}/>
             <Route path='/signup' element={<SignUpPage/>}/>
             </Routes>   
         </BrowserRouter>
