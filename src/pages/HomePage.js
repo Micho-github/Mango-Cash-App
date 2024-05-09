@@ -3,7 +3,10 @@
     import { useState, useEffect } from 'react'
     import axios from 'axios';
     import HomeAlert from '../components/ui/HomeAlert';
-import Transaction from '../components/Transaction';
+    import Transaction from '../components/Transaction';
+    import SendPopup from '../components/SendPopup';
+    import WithdrawPopup from '../components/WithdrawPopup';
+    import DepositPopup from '../components/DepositPopup';
     export default function HomePage() {
 
         const { id } = useParams();
@@ -43,6 +46,19 @@ import Transaction from '../components/Transaction';
               
                 fetchTransactions();
               }, [id]);
+        
+        const [isSendPopupOpen, setIsSendPopupOpen] = useState(false);
+        const [isWithdrawPopupOpen, setIsWithdrawPopupOpen] = useState(false);
+        const [isDepositPopupOpen, setIsDepositPopupOpen] = useState(false);
+      
+        const openSendPopup = () => setIsSendPopupOpen(true);
+        const closeSendPopup = () => setIsSendPopupOpen(false);
+      
+        const openWithdrawPopup = () => setIsWithdrawPopupOpen(true);
+        const closeWithdrawPopup = () => setIsWithdrawPopupOpen(false);
+      
+        const openDepositPopup = () => setIsDepositPopupOpen(true);
+        const closeDepositPopup = () => setIsDepositPopupOpen(false);
 
       return (
         <div data-w-id="5c6eb5400253237162de2bd8">
@@ -56,12 +72,11 @@ import Transaction from '../components/Transaction';
                 <div className="menu">
                     <section role="navigation" className="navigation-items w-nav-menu"><Link to ={`/transactions/${id}`}
                             className="navigation-item w-nav-link">History</Link>
-                            <Link to="#"
-                            className="navigation-item w-nav-link">coming</Link></section>
+                    </section>
                     <div className="menu-button w-nav-button"><img
                             src="/images/white menu.png"
                             width="31" data-w-id="18638a64-158e-82a5-ef35-2151b27a4e34"
-                            sizes="(max-width: 767px) 31px, 100vw" alt=""
+                            sizes="(max-width: 767px) 31px, 100vw" alt="menu-icon"
                             className="menu-icon" /></div>
                 </div><Link to="/login" className="button cc-contact-us w-inline-block">
                     <div>Logout</div>
@@ -99,28 +114,31 @@ import Transaction from '../components/Transaction';
             <div className="div-block-14">
                 <div className="text-block-11">What would you like to do with it?</div>
                 <section>
-                    <div className="w-layout-hflex flex-block-5">
-                        <div className="div-block-15"><Link to="#" className="link-block-2 w-inline-block"><img
-                                    src="images/send.png"
-                                    loading="lazy" sizes="150px"
-                                    alt="" className="image-7" />
-                                <div className="text-block-12">Send</div>
-                            </Link></div>
-                        <div className="div-block-16"><Link to="#" className="link-block-3 w-inline-block"><img
-                                    src="images/deposit.png"
-                                    loading="lazy" sizes="150px"
-                                    alt="" className="image-8" />
-                                <div className="text-block-13">Deposit</div>
-                            </Link></div>
-                        <div><Link to="#" className="link-block-4 w-inline-block"><img
-                                    src="images/withdraw.png"
-                                    loading="lazy" sizes="150px"
-                                    alt="" className="image-9" />
-                                <div className="text-block-14">Withdraw</div>
-                            </Link></div>
+                <div className="w-layout-hflex flex-block-5">
+                    <div className="div-block-15">
+                    <Link className="link-block-2 w-inline-block" onClick={openSendPopup}>
+                        <img src="images/send.png" loading="lazy" sizes="150px" alt="Send_Icon" className="image-7" />
+                        <div className="text-block-12">Send</div>
+                    </Link>
                     </div>
+                    <div className="div-block-16">
+                    <Link className="link-block-3 w-inline-block" onClick={openDepositPopup}>
+                        <img src="images/deposit.png" loading="lazy" sizes="150px" alt="Deposit_Icon" className="image-8" />
+                        <div className="text-block-13">Deposit</div>
+                    </Link>
+                    </div>
+                    <div>
+                    <Link className="link-block-4 w-inline-block" onClick={openWithdrawPopup}>
+                        <img src="images/withdraw.png" loading="lazy" sizes="150px" alt="Withdraw_Icon" className="image-9" />
+                        <div className="text-block-14">Withdraw</div>
+                    </Link>
+                    </div>
+                </div>
                 </section>
             </div>
+          {isSendPopupOpen && <SendPopup closePopup={closeSendPopup} accountId={id} />}
+          {isWithdrawPopupOpen && <WithdrawPopup closePopup={closeWithdrawPopup} accountId={id} />}
+          {isDepositPopupOpen && <DepositPopup closePopup={closeDepositPopup} accountId={id} />}
         </div>
         <div className="section-copy-copy">
             <section className="section-3">
