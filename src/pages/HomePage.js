@@ -112,6 +112,9 @@
                 </section>
             </div>
             <div className="div-block-14">
+                <div className="yourID">
+                    Your ID: {id} {/* account.id */}
+                </div>
                 <div className="text-block-11">What would you like to do with it?</div>
                 <section>
                 <div className="w-layout-hflex flex-block-5">
