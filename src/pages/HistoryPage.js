@@ -52,7 +52,7 @@ import HomeAlert from '../components/ui/HomeAlert';
                     width="108" sizes="108px"
                     alt="" className="logo-image" /></Link>
             <div className="menu">
-                <section role="navigation" className="navigation-items w-nav-menu"><Link to="/history" aria-current="page"
+                <section role="navigation" className="navigation-items w-nav-menu"><Link to="#" aria-current="page"
                         className="navigation-item w-nav-link w--current">History</Link><Link to="#"
                         className="navigation-item w-nav-link">coming</Link></section>
                 <div className="menu-button w-nav-button"><img

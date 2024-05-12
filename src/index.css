@@ -2,6 +2,7 @@
   color: #e0ab54;
   text-align: center;
   font-size: 15px;
+  background-color: #000;
 }
 
 .popup-container {
@@ -3993,7 +3994,7 @@ figcaption {
 
 .image-11, .div-block-20 {
   cursor: pointer;
-  display: none;
+  
 }
 
 .div-block-21 {

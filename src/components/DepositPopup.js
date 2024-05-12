@@ -8,11 +8,15 @@ const DepositPopup = ({ closePopup, accountId }) => {
     e.preventDefault();
     try {
         const response = await axios.post(`http://localhost:5247/api/Transactions/Api/V1/Transaction/Transaction`, {
-          amount,
-          accountId,
-          transactionType: "Deposit",
+          "accountId": accountId,
+          "transactionType": "deposit",
+          "fromAccountName": "Banking Service",
+          "toAccountName": "You",
+          "date": new Date(),
+          "amount": amount
         });
         console.log(response.data);
+        closePopup();
       } catch (error) {
         console.error("Error depositing money:", error);
       }

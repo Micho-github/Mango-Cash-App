@@ -7,13 +7,16 @@
     import SendPopup from '../components/SendPopup';
     import WithdrawPopup from '../components/WithdrawPopup';
     import DepositPopup from '../components/DepositPopup';
+    import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { ClipboardDocumentListIcon, ClipboardIcon } from '@heroicons/react/24/outline';
+import { ToastContainer, toast } from 'react-toastify';
     export default function HomePage() {
 
         const { id } = useParams();
 
         const [account, setAccount] = useState([]);
         const [AccountFound,SetAccountFound] = useState(true);
-        useEffect(() => {
+        const [ShowBalance,SetShowBalance] = useState(true);
             const fetchAccount = async () => {
                 try {
                     const response = await axios.get(`http://localhost:5247/api/Accounts/Api/V1/Account/${id}`);
@@ -25,6 +28,8 @@
                     console.error("Error fetching account: ", error);
                 }
             };
+
+            useEffect(() => {
                 fetchAccount();
             }, [id]); 
 
@@ -32,7 +37,7 @@
             const compareDates = (a, b) => {
                 return new Date(b.date) - new Date(a.date);
               };
-            useEffect(() => {
+            
                 const fetchTransactions = async () => {
                   try {
                     const response = await axios.get(`http://localhost:5247/api/Transactions/Api/V1/Transaction/${id}`);
@@ -43,7 +48,8 @@
                     console.error("Error fetching transactions: ", error);
                   }
                 };
-              
+
+                useEffect(() => {
                 fetchTransactions();
               }, [id]);
         
@@ -52,16 +58,41 @@
         const [isDepositPopupOpen, setIsDepositPopupOpen] = useState(false);
       
         const openSendPopup = () => setIsSendPopupOpen(true);
-        const closeSendPopup = () => setIsSendPopupOpen(false);
+        const closeSendPopup = () => {setIsSendPopupOpen(false); refreshdata();}
       
         const openWithdrawPopup = () => setIsWithdrawPopupOpen(true);
-        const closeWithdrawPopup = () => setIsWithdrawPopupOpen(false);
+        const closeWithdrawPopup = () => {setIsWithdrawPopupOpen(false); refreshdata();}
       
         const openDepositPopup = () => setIsDepositPopupOpen(true);
-        const closeDepositPopup = () => setIsDepositPopupOpen(false);
+        const closeDepositPopup = () => {setIsDepositPopupOpen(false); refreshdata();}
 
+        const refreshdata = () => {
+            fetchAccount();
+            fetchTransactions();
+          }
+
+          const handleClick = () => {
+            toast.success("Copied to Clipboard!");
+          }
+
+          const handlebalanceview = () =>{
+            SetShowBalance(!ShowBalance);
+          }
+          
       return (
         <div data-w-id="5c6eb5400253237162de2bd8">
+             <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
             {AccountFound==true ? (<>
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
             data-easing2="ease" role="banner" className="navigation w-nav">
@@ -89,23 +120,28 @@
                     <div className="div-block-13">
                         <h1 className="heading-2">Your Balance is</h1>
                         <div className="w-layout-hflex flex-block-2">
-                            <div className="text-block-10">${account.balance}</div>
+                            <div className="text-block-10">{ShowBalance==true ?(<>$ {account.balance}</>):(<>$ ***,***</>)}</div>
                             <div className="text-block-9"></div>
+                            
                             <div className="div-block-18">
-                                <article data-w-id="c00aae38-d372-dc2d-2993-f5d87a50149a" 
+                            {ShowBalance==true ? ( <article data-w-id="c00aae38-d372-dc2d-2993-f5d87a50149a" 
                                     className="div-block-19"><img
                                         id="viewimage"
                                         src="/images/view.png"
+                                        onClick={handlebalanceview}
                                         loading="lazy" width="28" sizes="28px" alt=""
                                         className="image-10" />
-                                </article>
+                                </article>):( 
                                 <div data-w-id="4a6ca22f-769a-8a90-31f4-9276ee58cfaf" 
                                     className="div-block-20"><img
                                         id="hideimage"
                                         src="/images/hide.png"
+                                        onClick={handlebalanceview}
                                         loading="lazy" width="28" sizes="28px" alt=""
                                         className="image-11" />
-                                </div>
+                                </div>)}
+                               
+                               
                             </div>
                         </div>
                     </div>
@@ -113,7 +149,13 @@
             </div>
             <div className="div-block-14">
                 <div className="yourID">
-                    Your ID: {id} {/* account.id */}
+                    Your ID: 
+                    <CopyToClipboard text={`${id}`}>
+                        <button className="yourID" onClick={handleClick}>
+                        {id} {/* account.id */}
+                        <ClipboardDocumentListIcon width={15} />
+                        </button>
+                    </CopyToClipboard>
                 </div>
                 <div className="text-block-11">What would you like to do with it?</div>
                 <section>
@@ -139,7 +181,7 @@
                 </div>
                 </section>
             </div>
-          {isSendPopupOpen && <SendPopup closePopup={closeSendPopup} accountId={id} />}
+          {isSendPopupOpen && <SendPopup closePopup={closeSendPopup} accountId={id} accountname={account.username}/>}
           {isWithdrawPopupOpen && <WithdrawPopup closePopup={closeWithdrawPopup} accountId={id} />}
           {isDepositPopupOpen && <DepositPopup closePopup={closeDepositPopup} accountId={id} />}
         </div>
