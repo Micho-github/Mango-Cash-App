@@ -1,3 +1,12 @@
+# How To Run Our Web App
+
+### 1- Open backend folder than run the solution .sln file for the project in VS 2022, this app requires newest version of microsoft vs and .Net framework(8.0).
+### 2- If you're opening the project for the first time you need to change the dbcontext data source to your own SQL server name located at appsettings.json in the MangoCashApp.Api, then open NuGet terminal and set the MangoCashApp.Core as default package and run update-database command.
+### 3- Run the code as http (because we used http in our react apis).
+###   3.1- You can try the APIs with swagger.
+### 4- Then without closing the swagger app or stopping the VS 2022 open the react app at the MangoCashApp folder through VS code and run the code through the terminal at root location of the MangoCashApp with npm start.
+### P.S: If the app didn't work correctly, make sure that the APIs are set correctly, as they are set to port 5247 by default. If it doesn't work you need to change APIs to your core port.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
