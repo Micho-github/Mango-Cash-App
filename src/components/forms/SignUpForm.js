@@ -27,10 +27,9 @@ export default function SignUpForm() {
       }
 
     const handleSubmit = async (e) => {
-        setPhoneNumber (addPlusIfMissing(phone));
         e.preventDefault();
         setType(false);
-        if (!phone.trim().match(/^(?:\+)(?:[0-9] ?){6,14}$/)) {
+        if (!phone.trim().match(/^[0-9]*$/)) {
             return toast.warn("insert a valid phone number.");
           }
           else if (!username.trim().match("^[a-zA-Z]+(?: [a-zA-Z]+)*$")){
